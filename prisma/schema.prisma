@@ -19,6 +19,7 @@ model Task {
   project_id   String?
   name         String
   description  String?   @db.Text
+  due_date     DateTime? @db.Date
   completed_on DateTime? @db.DateTime()
   created_at   DateTime  @default(now())
   updated_at   DateTime  @updatedAt
