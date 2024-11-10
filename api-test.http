@@ -3,9 +3,11 @@ GET http://localhost:3000/health HTTP/1.1
 
 ### GET tasks
 GET http://localhost:3000/v1/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMTZjMTY1My03YjEzLTQ5YmQtOTQ5OS01MzAwN2VhZDAxMjYiLCJpYXQiOjE3MzExODk2NjMsImV4cCI6MTczMTE5MzI2MywiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9.X0aV8VvE_vD_OIOG-fo2ROG2jmg4ktZT7zVIogyrcAk
 
 ### GET task by ID
 GET http://localhost:3000/v1/tasks/cm2vxib0w0003356lrlx4wovk HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMTZjMTY1My03YjEzLTQ5YmQtOTQ5OS01MzAwN2VhZDAxMjYiLCJpYXQiOjE3MzExODk2NjMsImV4cCI6MTczMTE5MzI2MywiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9.X0aV8VvE_vD_OIOG-fo2ROG2jmg4ktZT7zVIogyrcAk
 
 ### GET projects
 GET http://localhost:3000/v1/projects HTTP/1.1
