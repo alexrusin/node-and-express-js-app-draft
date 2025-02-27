@@ -15,7 +15,6 @@ export const createServer = () => {
     .use(cors());
 
   app.get("/health", (req: Request, res: Response) => {
-    throw new Error("oops");
     res.json({ ok: true, environment: config.env });
   });
 
