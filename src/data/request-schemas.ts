@@ -31,17 +31,6 @@ const task = {
       "date.format": "Due date must be in ISO 8601 format.",
       "date.greater": "Due date must be in the future.",
     }),
-  completed_on: Joi.date()
-    .iso()
-    .max("now")
-    .allow(null)
-    .optional()
-    .empty(null)
-    .messages({
-      "date.base": "Completed on date must be a valid date or null.",
-      "date.format": "Completed on date must be in ISO 8601 format.",
-      "date.max": "Completed on date must be in the past.",
-    }),
 };
 
 export const createTaskSchema = Joi.object(task);
