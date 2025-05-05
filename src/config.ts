@@ -6,8 +6,8 @@ const config = {
   consoleLogEmails: process.env.CONSOLE_LOG_EMAILS === "true",
   appSecret: process.env.APP_SECRET || "",
   defaultPageSize: parseInt(process.env.DEFAULT_PAGE_SIZE || "5"),
-  issuerBaseUrl: process.env.ISSUER_BASE_URL || "",
-  audience: process.env.AUDIENCE || "",
+  issuerBaseUrl: process.env.ISSUER_BASE_URL || "https://issuer-auth.com",
+  audience: process.env.AUDIENCE || "default",
   mail: {
     mailer: process.env.MAIL_MAILER || "smtp",
     host: process.env.MAIL_HOST || "",

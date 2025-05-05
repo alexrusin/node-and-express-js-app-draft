@@ -46,7 +46,7 @@ export const markTaskAsCompleted = async (req: Request, res: Response) => {
 export const createTask = async (req: Request, res: Response) => {
   const createTaskUseCase = new CreateTaskUseCase(req, mailer);
   const task = await createTaskUseCase.execute();
-  res.status(200).json({ task });
+  res.status(201).json({ task });
 };
 
 export const updateTask = async (req: Request, res: Response) => {

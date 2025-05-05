@@ -1,4 +1,4 @@
-import { CreateTaskUseCase } from "@/use-cases/CreateTaskUseCase"; // Adjust the import path accordingly
+import { CreateTaskUseCase } from "@/use-cases/CreateTaskUseCase";
 import { Request } from "express";
 import { IMailer } from "@/services/mailer/interface";
 import { repository } from "@/data/repositories";
